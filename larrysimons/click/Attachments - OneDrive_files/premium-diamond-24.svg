@@ -1,0 +1,26 @@
+<svg id="Icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffb900;
+      }
+
+      .cls-2 {
+        fill: #69afe5;
+      }
+
+      .cls-3 {
+        fill: #deecf9;
+      }
+    </style>
+  </defs>
+  <title>PremiumBadgingGleams_sept16</title>
+  <g id="diamond_24px">
+    <g>
+      <circle class="cls-1" cx="12" cy="12" r="12"/>
+      <polyline class="cls-2" points="4.88 9.67 8.53 5.17 14.78 5.17 19.5 9.67 12.19 19.5 4.88 9.67"/>
+      <polyline class="cls-3" points="4.88 9.67 8.53 5.17 14.78 5.17 19.5 9.67"/>
+      <path d="M15.39,4.92l4.69,5L12,19.87,3.94,10l4.68-5h6.78Zm-6.6,5.63H5.87L11.09,17ZM9.11,6L6,9.42H9.13l1-3.37h-1Zm4.9,4.5H10l2,5.64ZM12.47,6H11.3l-1,3.38h3.18Zm2.73,4.5L12.91,17l5.24-6.42H15.21ZM14.9,6H13.64l1,3.38H18Z"/>
+    </g>
+  </g>
+</svg>
