@@ -1,0 +1,41 @@
+.glyphicons-list{list-style:none;padding:0}.glyphicons-list li{display:inline-block;float:left;width:12.5%;height:115px;background-color:#f8f8f8;border:1px solid #fff;padding:10px;-webkit-transition:.3s ease;-o-transition:.3s ease;transition:.3s ease}.glyphicons-list li:hover{background-color:#eee}.glyphicons-list .glyphicon{display:block;text-align:center;font-size:25px;color:#222}.glyphicons-list .glyphicon-class{display:block;text-align:center;margin-top:10px;line-height:16px;font-size:13px}.fa-page-header{font-size:20px;padding-bottom:15px;border-bottom:1px solid #f1f1f1}.fontawesome-icon-list .fa-hover{margin-bottom:5px;-webkit-transition:.3s ease;-o-transition:.3s ease;transition:.3s ease}.fontawesome-icon-list .fa-hover:hover{background-color:#f8f8f8}.fontawesome-icon-list .fa-hover .fa{width:25px;color:#222}@media (max-width:767px){.glyphicons-list li{width:25%}}.prism-languages{list-style:none;padding:0;margin:20px 0}.prism-languages li{width:33.3333%;float:left}.prism-languages li code{margin-left:8px}@media (max-width:991px){.prism-languages li{width:50%}}.window-content .btn{margin-bottom:6px}
+.bt-login,.bt-login:hover, .bt-login:active, .bt-login:focus {
+    background-color: #ff8627;
+    color: #ffffff;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: background-color 300ms linear 0s;
+}
+.login-tab {
+	margin: 0 auto;
+	max-width: 380px;
+}
+
+.login-modal-header {
+	background: #c8cac9;
+	color: #fff;
+}
+
+.login-modal-header .modal-title {
+	color: #fff;
+}
+
+.login-modal-header .close {
+	color: #fff;
+}
+
+.login-modal i {
+	color: #000;
+}
+
+.login-modal form {
+	max-width: 340px;
+}
+
+.tab-pane form {
+	margin: 0 auto;
+}
+.login-modal-footer{
+	margin-top:15px;
+	margin-bottom:15px;
+}
