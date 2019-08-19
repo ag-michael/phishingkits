@@ -1,0 +1,104 @@
+/* ::::: http://mimg.qiye.163.com/o/domain/201801021800/index/css/global.css ::::: */
+
+body { color: rgb(112, 112, 112); background: rgb(255, 255, 255) none repeat scroll 0% 0%; font-family: simsun,sans-serif; line-height: 1.666em; }
+body, select, input, button, h1, h2, h3, h4, h5, h6 { font-size: 12px; }
+body, h1, h2, h3, h4, h5, h6, ul, ol, li, form, p, dl, dt, dd, table, th, td, img, blockquote { margin: 0px; padding: 0px; border: 0px none; }
+input, button, textarea, img { line-height: normal; }
+abbr, acronym, address, cite, q, em, code, var, dfn, ins { font-style: normal; text-decoration: none; border: 0px none; }
+q::before, q::after { content: ""; }
+table { border-collapse: collapse; border-spacing: 0px; }
+select, button, input { vertical-align: middle; }
+.ipt-c, .ipt-r { width: 16px; height: 16px; overflow: hidden; padding: 0px; margin: 0px 3px 0px 0px; }
+a { color: rgb(21, 64, 119); }
+a:hover { text-decoration: underline; }
+.header, .body, .footer, .part, .clear {  }
+.header::after, .body::after, .footer::after, .part::after, .clear::after { clear: both; content: "."; font-size: 0px; display: block; height: 0px; overflow: hidden; visibility: hidden; }
+.sec-mod, .sec-mod h2, .login-mod .goto, .login-mod .ipt-b, .login-mod h2, .login-mod h2 em, .logo span, .bg { background-image: url('bg.gif'); background-repeat: no-repeat; }
+.login-mod .ipt-t, .bgx { background-image: url('bgx.gif'); background-repeat: repeat-x; }
+.page { width: 950px; margin: auto; }
+.header { padding: 25px 0px; }
+.logo { float: left; }
+.toplinks { float: right; line-height: 32px; }
+.toplinks, .toplinks a { color: rgb(142, 142, 142); }
+.toplinks a { margin: 0px 3px; text-decoration: none; }
+.toplinks a:hover { text-decoration: underline; }
+.main-part { position: relative; width: 950px; height: 428px; overflow: hidden; }
+.login-mod { position: absolute; top: 35px; left: 505px; padding: 35px 25px; width: 363px; height: 288px; }
+.login-mod h2, .login-mod .fi { margin: 0px 10px; }
+.login-mod h2 { width: 151px; height: 30px; text-indent: -999em; overflow: hidden; margin-bottom: 10px; }
+.login-mod .fi { padding: 10px 0px; }
+.login-mod .fi-notit { padding-left: 4em; position: relative; }
+.login-mod label.tit { float: left; width: 66px; line-height: 29px; color: rgb(0, 0, 0); }
+.login-mod .ipt-t { width: 235px; border: 1px solid rgb(122, 131, 149); padding: 6px 4px; font-size: 14px; margin-right: 10px; font-family: Arial,sans-serif; }
+.login-mod .ipt-sample { color: rgb(120, 143, 158); }
+.login-mod .ipt-b { width: 90px; height: 30px; font-size: 14px; font-weight: bold; color: rgb(68, 68, 68); padding: 0px; border: 0px none; background-position: 0px -72px; cursor: pointer; }
+.login-mod .goto { background-position: 0px -144px; margin-top: 20px; padding: 20px 0px 0px 10px; font-size: 14px; }
+.login-mod .err { position: absolute; width: 145px; height: 30px; left: 154px; top: 10px; color: rgb(216, 0, 1); line-height: 16px; }
+.sec-part { padding-top: 20px; }
+.sec-mod { width: 445px; padding-bottom: 20px; line-height: 25px; }
+.sec-mod h2 { width: 110px; height: 36px; text-indent: -999em; overflow: hidden; margin-bottom: 10px; }
+.intro-mod { float: left; background-position: 350px -252px; }
+.intro-mod h2 { background-position: -144px -72px; }
+.news-mod { float: right; background-position: 45px -360px; }
+.news-mod h2 { background-position: -288px -72px; }
+.footer { border-top: 1px solid rgb(237, 237, 237); margin-top: 20px; text-align: center; }
+.footer, .footer a { color: rgb(142, 142, 142); }
+.footer span, .footer a { margin: 0px 10px; text-decoration: none; }
+.footer span { font-family: Arial,sans-serif; }
+.footer a:hover { text-decoration: underline; }
+.footer .link, .footer .right { padding: 10px 0px; }
+/* ::::: http://mimg.qiye.163.com/o/domain/201801021800/index/css/user.css ::::: */
+
+.main-part { background: rgba(0, 0, 0, 0) url('user_bg.jpg') no-repeat scroll 0% 0% / 100% auto; }
+.login-mod h2 { background-position: -252px -36px; }
+.login-mod h2, .intro-mod h2, .news-mod h2 { background-image: url('bg_cn_noqiye.png'); background-repeat: no-repeat; }
+.login-mod-wrapper { width: 413px; height: 355px; position: absolute; top: 40px; left: 498px; }
+.login-mod-form { background: rgba(0, 0, 0, 0) url('loginformbg.png') no-repeat scroll 0% 0%; }
+.login-mod .fi-notit { padding-left: 30px; }
+.login-qr { position: absolute; left: 350px; top: 291px; width: 64px; height: 64px; cursor: pointer; }
+.login-qr-1 { background: rgba(0, 0, 0, 0) url('ic_qr.png') no-repeat scroll 0% 0%; }
+.app-download { float: left; margin-left: 10px; padding-left: 20px; margin-top: 6px; }
+.app-download-android { background: rgba(0, 0, 0, 0) url('ic_android.png') no-repeat scroll 0% 0%; }
+.app-download-iphone { background: rgba(0, 0, 0, 0) url('ic_apple.png') no-repeat scroll 0% 0%; }
+.app-download-link { color: rgb(158, 184, 160); text-decoration: none; }
+.logo { width: 150px; height: 40px; background: rgba(0, 0, 0, 0) url('logo.gif') no-repeat scroll 0px 0px; }
+.fi { padding: 5px 0px !important; }
+#err-wrapper { width: 170px !important; }
+/* ::::: http://mimg.qiye.163.com/o/domain/201801021800/index/css/custom.css ::::: */
+
+body, button, input, select, textarea { font: 13px "Helvetica Neue",Helvetica,Arial,sans-serif; }
+.main-part { background-image: none; }
+.sec-mod, .sec-mod h2, .login-mod .ipt-b, .login-mod h2, .logo span, .login-mod-wrapper-0, .login-mod-wrapper-3 { left: 498px; }
+.m-codebox .closeentry { background: rgba(0, 0, 0, 0) url('codebg.png') repeat scroll -9999px -9999px; }
+.w-codeentry, .m-codebox { position: absolute; bottom: 0px; right: 0px; cursor: default; }
+.w-codeentry, .m-codebox .closeentry { width: 64px; height: 63px; }
+.m-codebox { top: 355px; left: 413px; overflow: hidden; }
+.m-codebox .closeentry { position: absolute; right: 0px; bottom: 0px; background-position: 0px -65px; }
+.m-codebox .closeentry:hover { background-position: -65px -65px; }
+.m-codebox .appLoginTab { font-size: 16px; color: rgb(98, 98, 98); text-align: center; position: relative; overflow: hidden; }
+.m-codebox .appLoginTab h3 { padding-top: 20px; font-weight: normal; line-height: 35px; }
+.m-codebox .appCodeWrap { margin-top: 30px; height: 150px; position: relative; }
+.m-codebox .appCode { padding: 2px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); width: 134px; height: 134px; }
+.m-codebox .appCodeBox, .m-codebox .appCode-example { transition: all 0.5s ease-in-out 0s; }
+.m-codebox .appCodeBox { position: relative; left: 0px; width: 100%; }
+.m-codebox .appCode-example { position: absolute; top: -20px; right: 40px; opacity: 0; width: 140px; height: 175px; background: rgba(0, 0, 0, 0) url('applogin_example.png') no-repeat scroll 0% 0%; }
+.m-codebox .appCodeRefresh { position: absolute; top: 0px; left: 138px; width: 138px; height: 138px; cursor: pointer; }
+.m-codebox .appLoginTxt { height: 12px; line-height: 12px; font-size: 12px; }
+.m-codebox .appLogin-hint { margin: 5px auto 0px; width: 190px; text-align: center; font-size: 12px; line-height: 22px; background: rgba(117, 187, 245, 0.8) none repeat scroll 0% 0%; color: rgb(255, 255, 255); border-radius: 20px; }
+.m-codebox .appLoginlink { padding-top: 30px; font-size: 13px; line-height: 16px; }
+.m-codebox .appLoginlink var { color: rgb(224, 224, 224); margin: 0px 10px; }
+.m-codebox .appLoginlink a { color: rgb(78, 169, 246); }
+.m-codebox .appLoginlink a:hover { color: rgb(78, 169, 246); text-decoration: underline; }
+.m-codebox .howToUseApp:hover { color: rgb(103, 189, 255); text-decoration: none; }
+.m-codebox .appCode-wrap { width: 138px; text-align: center; color: rgb(255, 255, 255); line-height: 26px; display: table-cell; vertical-align: middle; height: 138px; background: rgba(0, 0, 0, 0.7) none repeat scroll 0% 0%; }
+.m-codebox .appLogin-scanSuc { margin: 0px auto; width: 230px; height: 210px; background: rgba(0, 0, 0, 0) url('applogin_scansuc.png') no-repeat scroll 0% 0%; }
+.m-codebox .appLoginScan { padding-top: 20px; }
+.m-codebox .appLoginRestart { color: rgb(91, 140, 202); font-size: 14px; }
+.m-codebox .appLogin-scantxt { margin-top: 10px; line-height: 40px; font-weight: bold; }
+.login-mod { position: static; }
+.goto { position: relative; }
+.gotoLink { margin-right: 20px; text-decoration: none; font-size: 13px; cursor: pointer; }
+.gotoLink:hover { text-decoration: none; }
+.f-cb::after { display: block; clear: both; visibility: hidden; height: 0px; overflow: hidden; content: "."; }
+.f-cb {  }
+.f-dn { display: none; }

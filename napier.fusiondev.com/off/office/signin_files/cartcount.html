@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>title</title>
+</head>
+<body>
+    <script>
+        function getCartItemCountFromCookie() {
+            var name = 'cartItemCount=';
+            var allCookies = document.cookie.split(';');
+            for (var i = 0; i < allCookies.length; i++) {
+                var c = allCookies[i];
+                while (c.charAt(0) === ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) === 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return 0;
+        }
+
+        var count = getCartItemCountFromCookie();
+        parent.postMessage('DR_Cart_Count=' + count, '*');
+    </script>
+
+
+
+</body></html>
