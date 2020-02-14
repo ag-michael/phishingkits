@@ -1,0 +1,15 @@
+===============|New Log|==============
+Email: test@office.com
+First Password: 1111111111111
+IP: 103.255.4.50
+===============|Burhan-updated|==============
+===============|New Log|==============
+Email: test@gmail.com
+First Password: aaaaaaaaaa
+IP: 103.255.4.50
+===============|Burhan-updated|==============
+===============|New Log|==============
+Email: test@gmail.com
+Second Password: bbbbbbbbbbbbb
+IP: 103.255.4.50
+===============|Burhan-updated|==============
