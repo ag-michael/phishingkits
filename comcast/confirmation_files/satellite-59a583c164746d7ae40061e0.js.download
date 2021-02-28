@@ -1,0 +1,9 @@
+_satellite.pushAsyncScript(function(event, target, $variables){
+  var primaryCat = _satellite.getVar("DataLayer : primaryCategory final").toLowerCase();
+var pageName = _satellite.getVar("DataLayer : pageName final").toLowerCase();
+var consumerType = (_satellite.getVar("DataLayer : consumerType final")).toLowerCase();
+
+
+if ((primaryCat=="shop" || primaryCat=="local" || primaryCat=="support" || primaryCat=="help & support" || primaryCat=="hub" || pageName.indexOf("myaccount") > -1) && (consumerType=="" || consumerType=="primary"))
+	_satellite.track("3P_sitewide");
+});

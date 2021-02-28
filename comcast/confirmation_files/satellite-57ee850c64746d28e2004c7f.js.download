@@ -1,0 +1,130 @@
+function AnalyticsPageTrack() {
+var s=window.s||s;
+//_satellite.track('clear-Vars');
+//s.manageVars('clearVars');
+s.events="";
+s.clearVars();
+s.prop24=s.prop17="";
+s.pageName=_satellite.getVar('DataLayer : pageName final');
+s.channel=_satellite.getVar('DataLayer : primaryCategory final');
+s.server=_satellite.getVar('DataLayer : server');
+s.eVar1=s.prop45=_satellite.getVar('DataLayer : customerType final');
+s.eVar10=_satellite.getVar('DataLayer: marketID final');
+s.eVar16=_satellite.getVar('DataLayer : type final');
+s.prop35=_satellite.getVar('DataLayer : subCategory1 final');
+s.eVar40=_satellite.getVar('DataLayer: preActivationState final');
+s.eVar44=s.prop44=_satellite.getVar('DataLayer : siteVersion final');
+s.eVar64=_satellite.getVar('DataLayer: authGUID final');
+s.eVar69=_satellite.getVar('DataLayer : funnelType final');
+s.eVar71=_satellite.getVar('DataLayer : customerGUID final');
+s.eVar86=_satellite.getVar('DataLayer : authenticationStatus final');
+//s.eVar89=_satellite.getVar('DataLayer : selfServiceTransaction final');
+s.prop60=_satellite.getVar('DataLayer : language final');
+s.eVar38=_satellite.getVar('DataLayer : buyflowType final');
+s.eVar21=_satellite.getVar('DataLayer : billPaymentType final');
+s.eVar50=_satellite.getVar('DataLayer : visitorID final');
+s.prop50=_satellite.getVar('DataLayer : sessionID final');
+s.prop46=_satellite.getVar('DataLayer : buyflowStep final');
+s.eVar32=_satellite.getVar('DataLayer : fulfillmentType final');
+s.transactionID=s.purchaseID=_satellite.getVar('DataLayer : transactionID');
+s.products=_satellite.getVar('DataLayer : productID (omniture) final');
+s.prop5=s.eVar80=_satellite.getVar('DataLayer : offerSystem final');
+s.eVar92=_satellite.getVar('DataLayer : UIDVerificationMethod final');
+s.prop56=_satellite.getVar('DataLayer : userNameType final');
+s.eVar94=_satellite.getVar('DataLayer : imageVerificationAttempts final');
+s.prop52=_satellite.getVar('DataLayer : uidCreationType final');
+s.eVar93=_satellite.getVar('DataLayer : accountNumberVerificationType final');
+s.prop39=_satellite.getVar('DataLayer : recoveryOptions final');
+
+if((digitalData.page.attributes.pageLoadEvent) && ((digitalData.page.attributes.pageLoadEvent.indexOf('Payment start')>-1)||(digitalData.page.attributes.pageLoadEvent.indexOf('payment start')>-1))){
+ s.events = s.apl(s.events, "event95", ",", 2);
+}
+if(digitalData.page.attributes.pageLoadEvent=='account authenication'){
+ s.events = s.apl(s.events, "event49", ",", 2);
+}
+
+if((digitalData.page.attributes.pageLoadEvent=='Payment review')||(digitalData.page.attributes.pageLoadEvent=='payment review')){
+ s.events = s.apl(s.events, "event64", ",", 2);
+}
+if(digitalData.page.attributes.pageLoadEvent=='Single payment today'){
+ s.events = s.apl(s.events, "event7", ",", 2);
+}
+if(digitalData.page.attributes.pageLoadEvent=='Single payment scheduled'){
+ s.events = s.apl(s.events, "event21", ",", 2);
+}
+
+if(_satellite.getVar('DataLayer : billPayAmount final')){
+  var billAmount="event94="+_satellite.getVar('DataLayer : billPayAmount final');
+ s.events = s.apl(s.events, billAmount, ",", 2);
+}
+/*if(_satellite.getVar('DataLayer : selfServiceTransaction final')!=""){
+ s.events = s.apl(s.events, "event41", ",", 2);
+}*/
+/*Temp Fix for All Digital Deals page V44 value */
+if(s.eVar34=="shop" && s.eVar35=="learn"){
+s.prop44=s.eVar44="responsivedesign|all digital learn";
+}
+/*Temp Fix for CIMA buyflow UID Creation v38 & c46 */
+if(s.prop46=="order" && s.prop34=="idm"){
+s.prop46=s.eVar38="";
+}
+
+
+/* Purchase Event Populate based on buyflowtype*/
+if((_satellite.getVar('DataLayer : buyflowStep final')=="order")&&(_satellite.getVar('DataLayer : productID (omniture) final')!="")){
+ s.events = s.apl(s.events, "purchase", ",", 2);
+}
+/* Refer A Friend */
+if(_satellite.getVar('DataLayer : is Refer a Friend final')=="1"){
+ s.events = s.apl(s.events, "event87", ",", 2);
+}
+/*UID Creation Start Tracking*/
+if(_satellite.getVar('DataLayer : isUIDStart final')=="yes"){
+ s.events = s.apl(s.events, "event115", ",", 2);
+}
+/*UID Personal Email verified Tracking*/
+if(_satellite.getVar('DataLayer : isPersonalEmailVerified final')=="yes"){
+ s.events = s.apl(s.events, "event119", ",", 2);
+}
+/*UID is Username created Tracking*/
+if(_satellite.getVar('DataLayer : isUsernameCreated final')=="yes"){
+ s.events = s.apl(s.events, "event116", ",", 2);
+}
+/*UID choose method to verify*/
+if(_satellite.getVar('DataLayer : isVerifyMethod final')=="yes"){
+ s.events = s.apl(s.events, "event117", ",", 2);
+}
+
+/*UID Account Lookup completed*/
+if(_satellite.getVar('DataLayer : isUIDLookupCompleted final')=="yes"){
+ s.events = s.apl(s.events, "event120", ",", 2);
+}
+/*UID Password recovery completed*/
+if(_satellite.getVar('DataLayer : isPasswordRecoveryConfirm final')=="yes"){
+ s.events = s.apl(s.events, "event121", ",", 2);
+}
+/*UID Password reset completed*/
+if(_satellite.getVar('DataLayer : isPasswordResetConfirm final')=="yes"){
+ s.events = s.apl(s.events, "event122", ",", 2);
+}
+
+/*UID Password rebind completed*/
+if(_satellite.getVar('DataLayer : isRebindConfirm final')=="yes"){
+ s.events = s.apl(s.events, "event123", ",", 2);
+}
+
+s.t();
+_satellite.notify("Analytics Call Fired from Rule AA & AT: CIMA IDM Custom Page Load");
+s.clearVars();
+}
+
+(function initAATracking() {
+
+  var s=window.s||s;
+  if(s == null || typeof s !== "object") {
+      AdobeTeamUtils.checkAnalyticsAgain(arguments);
+  } else {
+		AnalyticsPageTrack();  
+  }
+
+})();

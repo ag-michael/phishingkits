@@ -1,0 +1,4 @@
+// Fire Order Confirmation only on IDM Confirmation Page.
+if(_satellite.getVar("DataLayer : pageName final").toLowerCase().indexOf("shop|buyflow|confirmation") > -1) {
+	 _satellite.track("AT_buyflow_confirmation_mbox");
+}

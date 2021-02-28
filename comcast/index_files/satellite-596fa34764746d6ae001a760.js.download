@@ -1,0 +1,77 @@
+
+function AnalyticsPageTrack() {
+
+  var s=window.s||s;
+  //_satellite.track('clear-Vars');
+  //s.manageVars('clearVars');
+  s.events="";
+  s.clearVars();
+
+  if(_satellite.getVar('AA : businessType')=== "resi"){
+    var screenName = "sign in";
+        s.pageName = screenName;
+        s.channel = screenName;
+        s.prop4 = screenName;
+        s.prop7 = _.get(window, "digitalData.page.pageInfo.referrerId");
+        s.prop33 = "comcast net";
+        s.prop35 = s.eVar35 = "authentication";
+        s.prop36 = "site:home";
+        s.eVar36 = "site:home";
+        s.eVar47 = "anonymous";
+        s.eVar7 = s.prop7;
+        s.events = "event11";
+
+        s.prop32 = "cim"; //business
+
+        s.eVar31 = screenName;
+
+        if (s.prop7 === "share-the-awesome"){
+            s.prop33 = "Xfinity TV referafriend";
+        }
+
+        // Will Not getting this cause an issue?
+        //s.prop23 = s.eVar41 = getViewSizeCategory();
+
+  
+   
+  s.t();
+  _satellite.notify("Analytics Call Fired from Rule AA & AT: Login Custom Page Load");
+  s.clearVars();
+
+}
+}
+
+
+if(_satellite.getVar('AA : businessType')=== "busn"){
+  
+    var screenName = "sign in"
+    s.pageName = "Commercial " + screenName + "|" + screenName + "|" + screenName; 
+    s.channel = _.get(window, "digitalData.page.category.primaryCategory");
+    s.prop12 = "Commercial " + screenName; 
+    s.prop13 = "Commercial " + screenName + "|" + screenName; 
+/*
+  s.pageName=_satellite.getVar('DataLayer : pageName final');
+  s.channel=_satellite.getVar('DataLayer : primaryCategory final');
+  s.server=_satellite.getVar('DataLayer : server');
+  s.prop12=_satellite.getVar('DataLayer : primaryCategory final');
+  s.prop13= _satellite.getVar('DataLayer : subCategory1 final');
+  */
+
+
+s.t();
+  _satellite.notify("Analytics Call Fired from Rule AA & AT: Login Page Load");
+  s.clearVars();  
+}
+
+(function initAATracking() {
+
+  var s=window.s||s;
+  if(typeof s == "undefined" || s == null || typeof s !== "object") {
+      AdobeTeamUtils.checkAnalyticsAgain(arguments);
+  } else {
+		AnalyticsPageTrack();  
+  }
+
+})();
+
+

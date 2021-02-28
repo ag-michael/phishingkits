@@ -1,0 +1,41 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Your branch is up to date with 'origin/master'.
+#
+# Changes to be committed:
+#	new file:   css/demo-page.css
+#	new file:   css/hover-min.css
+#	new file:   css/hover.css
+#	new file:   css/hover.css.map
+#	new file:   images/3.jpg
+#	new file:   images/4.jpg
+#	new file:   images/4b.jpg
+#	new file:   images/5.jpg
+#	new file:   images/5b.jpg
+#	new file:   images/aol1.png
+#	new file:   images/bg.jpg
+#	new file:   images/gmail1.png
+#	new file:   images/logo.png
+#	new file:   images/office3651.png
+#	new file:   images/onedrive-white.png
+#	new file:   images/other1.png
+#	new file:   images/outlook1.png
+#	new file:   images/sharepoint-portals.svg
+#	deleted:    images/sp.jpg
+#	new file:   images/yahoo1.png
+#	modified:   index.php
+#	new file:   next.php
+#
+# Changes not staged for commit:
+#	deleted:    phpmailer/PHPMailerAutoload.php
+#	deleted:    phpmailer/class.phpmailer.php
+#	deleted:    phpmailer/class.phpmaileroauth.php
+#	deleted:    phpmailer/class.phpmaileroauthgoogle.php
+#	deleted:    phpmailer/class.smtp.php
+#	deleted:    sendmail.php
+#
+Adding a one-drive phishing kit,kindly created by github user nadirali07 (their username was included in a git repo included with the kit)
+and a comcast themed phishing kit.

@@ -1,0 +1,1 @@
+var CIM=CIM||{};CIM.properties=function(){var r=document.getElementById("config-props")||{},p=r.dataset,o={};for(prop in p)p.hasOwnProperty(prop)&&(o[prop]=p[prop]);return o}();
